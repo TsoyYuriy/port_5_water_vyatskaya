@@ -3,16 +3,37 @@
 body {
     font-family: "Montserrat",Arial, "Helvetica Neue", Helvetica, sans-serif;
     box-sizing: border-box;
+    
 }
 .top-container {
     @include container(1437px);
 }
 .container {
     @include container(1226px);
+    padding: 0 33px;
 }
 .bg-headerandmain {
     background: url(../design/bg-header_and_main.png) no-repeat center;
     background-size: 100%;
+    
 }
 
+
 @import "header";
+
+@media screen and (min-width: 900px) {
+    .bg-headerandmain {
+        background-size: 100%;
+    }
+    .bg-header {
+        background: rgba(255, 255, 255, 0.6);
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 100px;
+        display: block;
+    }
+     
+}
