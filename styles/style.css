@@ -153,6 +153,14 @@ body {
     margin-left: 35px;
   }
 }
+.promo__title {
+  font-weight: bold;
+  font-size: 56.8px;
+  line-height: 69px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
 @media screen and (min-width: 900px) {
   .bg-headerandmain {
     background-size: 100%;
