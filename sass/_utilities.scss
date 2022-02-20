@@ -1,6 +1,10 @@
+
+// body {
+//     font-family: "Montserrat",Arial, "Helvetica Neue", Helvetica, sans-serif;
+//     box-sizing: border-box;
+// }
 @mixin container ($w) {
     max-width: $w;
     margin: 0 auto;
 }
-
 

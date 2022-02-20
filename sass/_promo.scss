@@ -1,7 +1,62 @@
-.promo__title {
-    font-weight: bold;
-    font-size: 56.8px;
-    line-height: 69px;
+
+.promo {
+    padding: 105px 0;
+    background: url(../design/bg-header_and_main.png) no-repeat center;
+    background-size: 100%;
+    position: relative;
+    &::after {
+        content: "";
+        background: url(../design/bg-header_and_main--bootle.png) no-repeat center;
+        height: 170px;
+        width: 160px;
+        background-size: 80%;
+        position: absolute;
+        right: 0;
+        bottom: 22px;
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        max-width: 300px;
+    }
+}
+.form__wrap {
+    background: #C3eef9;
+    border-radius: 6px;
+    position: absolute;
+    bottom: 12px;
+}
+.form__input {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    background: #C3eef9;
+    border: none;
+    padding-left: 14px;
+    &::-webkit-input-placeholder { /* WebKit browsers */
+        color: #47A4DC;
+    }
+    &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color: #47A4DC;
+    }
+    &::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color: #47A4DC;
+    }
+    &:-ms-input-placeholder { /* Internet Explorer 10+ */
+        color: #47A4DC;
+    }
+}
+.form__btn {
+    background: #EC1F3A;
+    border-radius: 6px;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 17px;
     text-transform: uppercase;
     color: #FFFFFF;
+    padding: 11px 25px;
+    border: none;
 }

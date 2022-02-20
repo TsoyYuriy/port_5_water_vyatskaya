@@ -3,7 +3,6 @@
 body {
     font-family: "Montserrat",Arial, "Helvetica Neue", Helvetica, sans-serif;
     box-sizing: border-box;
-    
 }
 .top-container {
     @include container(1437px);
@@ -12,12 +11,16 @@ body {
     @include container(1226px);
     padding: 0 33px;
 }
-.bg-headerandmain {
-    background: url(../design/bg-header_and_main.png) no-repeat center;
-    background-size: 100%;
-    
-}
+// .bg-headerandmain {
+//     background: url(../design/bg-header_and_main.png) no-repeat 0 100px;
+//     background-size: 100%;
+// }
 
+// img {
+//     width: 100%;
+//     position: absolute;
+//     z-index: -1;
+// }
 
 @import "header";
 @import "promo";

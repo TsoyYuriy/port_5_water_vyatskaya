@@ -1,7 +1,7 @@
 
 
 .header {
-    padding: 39px 0;
+    padding-top: 39px;
     display: flex;
     align-items: center;
     position: relative;
@@ -27,7 +27,7 @@
         justify-content: center;
         width: 26px;
         height: 26px;
-        padding: 12px 9px;
+        padding: 17px 13px;
     }
 }
 .burger__line,
@@ -64,6 +64,8 @@
 }
 .burger-checkbox:checked ~ .nav {
     visibility: visible;
+    background: #ffffffa8;
+    border-radius: 10px;
 }
 .burger__line,
 .burger__line::before,
@@ -73,7 +75,8 @@
 .nav {
     visibility: hidden;
     margin-top: 15px;
-
+    position: absolute;
+    top: 90px;
 }
 .menu {
     list-style: none;
@@ -93,13 +96,10 @@
         text-decoration: none;
        
     }
-    
-
 }
 
 
-@media screen and (min-width: 600px) {
-    
+@media screen and (min-width: 600px) {  
     .burger__line,
     .burger-checkbox__label {
         display: none;
@@ -107,6 +107,7 @@
     .nav {
         visibility: visible;
         margin-top: 0;
+        position: static;
     }
     .menu li {
         margin-left: 25px;
