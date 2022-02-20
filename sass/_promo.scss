@@ -28,6 +28,7 @@
     border-radius: 6px;
     position: absolute;
     bottom: 12px;
+    display: inline-block;
 }
 .form__input {
     font-weight: 600;
@@ -59,4 +60,46 @@
     color: #FFFFFF;
     padding: 11px 25px;
     border: none;
+}
+
+@media screen and (min-width: 600px) {  
+    .promo {
+        padding: 116px 0;
+        &::after {  
+            height: 280px;
+            width: 328px;
+            background-size: 90%;
+            right: 8px;
+            bottom: 42px;
+        }
+        &__title {
+            font-size: 35px;
+            line-height: 48px;
+            max-width: 470px;
+            margin: 70px 0 30px 0;
+        }
+    }
+    .form__wrap {
+        position: static;
+    }
+    .form__btn {
+        padding: 19px 45px;
+    }
+}
+@media screen and (min-width: 900px) {
+    .promo {
+        padding: 120px 0;
+        &::after {  
+            right: 5px;
+            bottom: -55px;
+            height: 504px;
+            width: 526px;
+            background-size: 67%;
+        }
+        &__title {
+            font-size: 57px;
+            line-height: 69px;
+            max-width: 730px;
+        }
+    }
 }

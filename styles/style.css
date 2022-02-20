@@ -6,6 +6,7 @@ body {
 .top-container {
   max-width: 1437px;
   margin: 0 auto;
+  background: linear-gradient(180deg, white 0%, #e2f2f2 100%);
 }
 
 .container {
@@ -183,6 +184,7 @@ body {
   border-radius: 6px;
   position: absolute;
   bottom: 12px;
+  display: inline-block;
 }
 
 .form__input {
@@ -222,20 +224,47 @@ body {
   border: none;
 }
 
-@media screen and (min-width: 900px) {
-  .bg-headerandmain {
-    background-size: 100%;
+@media screen and (min-width: 600px) {
+  .promo {
+    padding: 116px 0;
+  }
+  .promo::after {
+    height: 280px;
+    width: 328px;
+    background-size: 90%;
+    right: 8px;
+    bottom: 42px;
+  }
+  .promo__title {
+    font-size: 35px;
+    line-height: 48px;
+    max-width: 470px;
+    margin: 70px 0 30px 0;
   }
 
-  .bg-header {
-    background: rgba(255, 255, 255, 0.6);
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    height: 100px;
-    display: block;
+  .form__wrap {
+    position: static;
+  }
+
+  .form__btn {
+    padding: 19px 45px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .promo {
+    padding: 120px 0;
+  }
+  .promo::after {
+    right: 5px;
+    bottom: -55px;
+    height: 504px;
+    width: 526px;
+    background-size: 67%;
+  }
+  .promo__title {
+    font-size: 57px;
+    line-height: 69px;
+    max-width: 730px;
   }
 }
 
