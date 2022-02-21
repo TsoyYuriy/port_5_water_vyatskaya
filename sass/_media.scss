@@ -1,0 +1,15 @@
+@mixin tablet-600 () {
+    @media screen and (min-width: 600px) {
+        @content;
+    }
+}
+@mixin tablet-900 () {
+    @media screen and (min-width: 900px) {
+        @content;
+    }
+}
+@mixin tablet-1200 () {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
+}

@@ -14,6 +14,10 @@
     height: 31px;
     display: block;
     margin-right: auto;
+    @include tablet-1200 {
+        width: 288px;
+        height: 75px;
+    }
 }
 .burger-checkbox {
     display: none;
@@ -28,6 +32,9 @@
         width: 26px;
         height: 26px;
         padding: 17px 13px;
+        @include tablet-600 {
+            display: none;
+        }
     }
 }
 .burger__line,
@@ -39,8 +46,10 @@
     position: relative;
     background: #FFFFFF;
     box-shadow: inset 0.394737px 0.394737px 0.394737px rgba(33, 68, 104, 0.4), inset -0.394737px -0.394737px 0.394737px rgba(255, 255, 255, 0.4);
+    @include tablet-600 {
+        display: none;
+    }
 }
-
 .burger__line::before {
     content: "";
     top: -5px;
@@ -77,6 +86,11 @@
     margin-top: 15px;
     position: absolute;
     top: 90px;
+    @include tablet-600 {
+        visibility: visible;
+        margin-top: 0;
+        position: static;
+    }
 }
 .menu {
     list-style: none;
@@ -87,6 +101,12 @@
     justify-content: center;
     & li {
         margin-left: 12px;
+        @include tablet-600 {
+            margin-left: 25px;
+        }
+        @include tablet-900 {
+            margin-left: 35px;
+        }
     }
     &__link {
         font-weight: 600;
@@ -94,35 +114,10 @@
         line-height: 30px;
         color: #50BEFF;
         text-decoration: none;
+        @include tablet-1200 {
+            font-size: 21px;
+            line-height: 25px;
+        }
        
-    }
-}
-
-
-@media screen and (min-width: 600px) {  
-    .burger__line,
-    .burger-checkbox__label {
-        display: none;
-    }
-    .nav {
-        visibility: visible;
-        margin-top: 0;
-        position: static;
-    }
-    .menu li {
-        margin-left: 25px;
-    }
-}
-@media screen and (min-width: 900px) {
-    .burger__line,
-    .burger-checkbox__label {
-        display: none;
-    }
-    .nav {
-        visibility: visible;
-        margin-top: 0;
-    }
-    .menu li {
-        margin-left: 35px;
     }
 }
