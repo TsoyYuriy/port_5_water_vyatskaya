@@ -13,3 +13,8 @@
         @content;
     }
 }
+@mixin tablet-1400 () {
+    @media screen and (min-width: 1400px) {
+        @content;
+    }
+}

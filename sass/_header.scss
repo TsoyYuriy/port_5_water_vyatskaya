@@ -1,7 +1,10 @@
-
-
 .header {
-    padding-top: 39px;
+    @include tablet-600 {
+        background: rgba(255, 255, 255, 0.6);
+    }
+}
+.header__wrap {
+    padding: 39px 33px 0 33px;
     display: flex;
     align-items: center;
     position: relative;
@@ -14,6 +17,7 @@
     height: 31px;
     display: block;
     margin-right: auto;
+    border-radius: 15px;
     @include tablet-1200 {
         width: 288px;
         height: 75px;
@@ -84,12 +88,12 @@
 .nav {
     visibility: hidden;
     margin-top: 15px;
-    position: absolute;
-    top: 90px;
+    // position: absolute;
+    // top: 90px;
     @include tablet-600 {
         visibility: visible;
         margin-top: 0;
-        position: static;
+        // position: static;
     }
 }
 .menu {

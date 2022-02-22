@@ -1,21 +1,6 @@
 @import "utilities";
 @import "media";
-
-body {
-    font-family: "Montserrat",Arial, "Helvetica Neue", Helvetica, sans-serif;
-    box-sizing: border-box;
-
-}
-.top-container {
-    @include container(1437px);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(226,242,242,1) 100%);
-
-}
-.container {
-    @include container(1226px);
-    padding: 0 33px;
-}
-
+@import "general-styles";
 @import "header";
 @import "promo";
 

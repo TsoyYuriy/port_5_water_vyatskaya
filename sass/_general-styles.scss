@@ -1,0 +1,23 @@
+body {
+    font-family: "Montserrat",Arial, "Helvetica Neue", Helvetica, sans-serif;
+    box-sizing: border-box;
+
+}
+.bg-general {
+    background: url(../design/bg-general-mobile.jpg) no-repeat center;
+    background-size: cover;
+    @include tablet-600 {
+        background: url(../design/bg-general-desktop.jpg) no-repeat center;
+    }
+}
+.top-container {
+    @include container(1437px);
+}
+.container {
+    @include container(1226px);
+    // padding: 0 33px;
+    // @include tablet-600 {
+    //     padding: 0 20px;
+
+    // }
+}
