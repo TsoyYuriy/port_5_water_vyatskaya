@@ -1,12 +1,13 @@
 .promo {
     background: url(../design/bg-header_and_main.png) no-repeat center;
     background-size: 100%;
-    padding: 50px 33px;
+    padding: 50px 0;
     margin-bottom: 100px;
     position: relative;
     @include tablet-600 {
         padding-top: 16%;
         padding-bottom: 116px;
+        margin-bottom: 0;   
     }
     @include tablet-1400 {
         padding-top: 12%;
@@ -16,10 +17,10 @@
         content: "";
         background: url(../design/bg-header_and_main--bootle.png) no-repeat center;
         height: 170px;
-        width: 160px;
+        width: 135px;
         background-size: 80%;
         position: absolute;
-        right: 15px;
+        right: 9px;
         bottom: -20px;
         @include tablet-600 {
             height: 280px;
@@ -45,20 +46,17 @@
     }
     &__title {
         font-weight: bold;
-        font-size: 24px;
-        line-height: 29px;
+        @include title-size(24px, 29px);
         text-transform: uppercase;
         color: #FFFFFF;
         max-width: 300px;
         @include tablet-600 {
-            font-size: 35px;
-            line-height: 48px;
+            @include title-size(35px, 48px);
             max-width: 470px;
             margin: 70px 0 30px 0;
         }
         @include tablet-900 {
-            font-size: 57px;
-            line-height: 69px;
+            @include title-size(57px, 69px);
             max-width: 730px;
         }
         @include tablet-1400 {

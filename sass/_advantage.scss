@@ -1,0 +1,91 @@
+.advantage {
+    overflow: hidden;
+    &__title-wrap {
+        padding: 0 33px;
+        margin-bottom: 33px;
+    }
+    &__title {
+        @include title-size(29px, 36px);
+        font-weight: 600;
+        margin: 0;
+        &--red {
+            color: #EC1F3A;
+        }
+        @include tablet-600 {
+            @include title-size(35px, 48px);
+        }
+        @include tablet-900 {
+            @include title-size(58px, 70px);
+        }
+    }
+    &__row {
+        display: grid;
+        grid-template-columns: repeat(3, 166px);
+        gap: 30px;
+        position: relative;
+        right: 24%;
+        margin-bottom: 10px;
+        @include mobile-400 {
+            gap: 48px;
+            right: 20%;
+        }
+        @include tablet-600 {
+            position: static;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 0 33px;
+        }
+        @include tablet-900 {
+            gap: 87px;
+        }
+    }
+    &__col {
+        @extend %center-flex;
+        flex-direction: column;
+        @include tablet-600 {
+            align-items: flex-start;
+        }
+    }
+    &__img {
+        margin-bottom: 12px;
+        width: 70px;
+        height: 77px;
+        object-fit: contain;
+        @include tablet-600 {
+            width: 100px;
+            height: 100px;
+        }
+        @include tablet-900 {
+            width: 174px;
+            height: 174px;
+        }
+    }
+    &__text {
+        font-weight: normal;
+        @include text-size(9px, 11px);
+        text-align: center;
+        color: #000000;
+        @include tablet-600 {
+            text-align: left;
+            @include text-size(12px, 15px);
+        }
+        @include tablet-900 {
+            @include text-size(14px, 17px);
+        }
+    }
+    &__nav-carusel {
+        text-align: center;
+        @include tablet-600 {
+            display: none;
+        }
+    }
+}
+.nav-carusel__link {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background: #C8EDFF;
+    border-radius: 50%;
+    &--action {
+        background: #50BEFF;
+    }
+}

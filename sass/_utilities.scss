@@ -1,4 +1,18 @@
-// $title-size: 
+
+@mixin title-size($fs, $lh) {
+    font-size: $fs;
+    line-height: $lh;
+}
+@mixin text-size($fs, $lh) {
+    font-size: $fs;
+    line-height: $lh;
+}
+
+%center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
 
 @mixin container ($w) {
     max-width: $w;
