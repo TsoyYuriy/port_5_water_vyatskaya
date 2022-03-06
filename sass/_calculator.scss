@@ -1,0 +1,145 @@
+.calculator {
+    padding: 0 9px;
+    &__title {
+        text-align: center;
+        @include title-size(29px, 36px);
+        font-weight: 500;
+    }
+    &__row {
+        background: #FFFFFF;
+        box-shadow: inset 1.03906px 2.59766px 1.03906px rgba(255, 255, 255, 0.5), inset -1.03906px 2.59766px 1.03906px rgba(255, 255, 255, 0.5), inset 0px 1.03906px 1.03906px rgba(255, 255, 255, 0.5);
+        border-radius: 10px;
+        padding: 23px 0;
+        display: flex;
+        justify-content: center;
+    }
+    &__card {
+        display: flex;
+        flex-direction: column;
+    }
+    &__col {
+        margin-bottom: 33px;
+        &:nth-child(3) {
+            order: 3;
+        }
+    }
+    &__col--line {
+        flex-grow: 2;
+        display: flex;
+        align-items: baseline;
+        min-width: 200px;
+    }
+    &__subtitle {
+        @include title-size(16px, 20px);
+        font-weight: normal;
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: 18px;
+    }
+}
+.form__wrap {
+    display: flex;
+}
+.label {
+    &--ml {
+        margin-left: 6px;
+    }
+    &__input {
+        display: none;
+        &:checked + .label__span {
+            background: #50BEFF;
+            border: 1px solid #50BEFF;
+            border-radius: 9px;
+            color: #FFFFFF;
+        }
+    }
+    &__span {
+        @include title-size(13px, 15px);
+        font-weight: 500;
+        border: 1px solid #006FCC;
+        border-radius: 9px;
+        color: #000000;
+        min-width: 146px;
+        height: 43px;
+        text-transform: uppercase;
+        display: inline-flex;
+        @extend %center-flex;
+    }
+}
+
+.counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;   
+    margin-right: 7%;
+    &__link {
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        &--minus {
+            background: url(../design/counter-minus.svg)no-repeat center;
+        }
+        &--plus {
+            background: url(../design/counter-plus.svg) no-repeat center;
+        }
+    }
+    &__number {
+        font-family: "Sen", Arial, "Helvetica Neue", Helvetica, sans-serif;
+        @include title-size(16px, 28px);
+        color: #000000;
+        border: 1px solid #50BEFF;
+        border-radius: 8px;
+        padding: 6px 15px;
+        margin: 0 17px;
+        display: inline-block;
+    }
+    &__text {
+        @include title-size(12px, 15px);
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+}
+
+.calc-footer {
+    &__col {
+        display: flex;
+        align-items: center;
+    }
+    &__text {
+        @include title-size(13px, 16px);
+        padding-right: 50px;
+        max-width: 155px;
+        height: 34px;
+    }
+    &--bottel {
+        background: url(../design/calc-footer-icon_bottel.svg) no-repeat center right;
+    }
+    &--card {
+        background: url(../design/calc-footer-icon_card.svg) no-repeat center right;
+        padding-right: 52px;
+    }
+    &__count {
+        font-weight: bold;
+        @include title-size(24px, 29px);
+    }
+}
+.footer__count--mg {
+    margin-left: 20px;
+}
+.order-btn {
+    font-weight: 900;
+    font-size: 16.4839px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 13px 59px;
+    background: #EC1F3A;
+    border-radius: 6px;
+    border: none;
+    display: inline-block;
+    &--util {
+        margin-top: 29px;
+    }
+}

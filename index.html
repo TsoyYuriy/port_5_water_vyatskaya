@@ -7,6 +7,7 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Sen:wght@700&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="styles/normalize.css">
    <link rel="stylesheet" href="styles/style.css">
    <title>Вода "Вятская"</title>
@@ -105,11 +106,85 @@
             </div>
          </div><!--advantage-->
 
+         <div class="calculator">
+            <h3 class="calculator__title">Калькулятор воды</h3>
+               <div class="calculator__row">
+                  <form>
+                     <div class="calculator__card">
+                        <div class="calculator__col">
+                           <p class="calculator__subtitle">мы заказываем воду</p>
+
+                           <label class="label">
+                              <input type="checkbox" class="label__input">
+                              <span class="label__span">в офис</span>
+                           </label>
+
+                           <label class="label label--ml">
+                              <input type="checkbox" class="label__input">
+                              <span class="label__span">домой</span>
+                           </label>
+                        </div>
+
+                        <div class="calculator__col calculator__col--line">
+                           <p class="calculator__subtitle">будут пить</p>
+
+                           <div class="counter">
+                              <div class="counter__nav">
+                                 <span class="counter__link counter__link--minus"></span>
+                                 <span class="counter__number">1</span>
+                                 <span class="counter__link counter__link--plus"></span>
+                              </div>
+                              <p class="counter__text">человек</p>
+                           </div>
+                        </div>
+
+                        <div class="calculator__col calculator__col--line">
+                           <p class="calculator__subtitle">нужен запас на</p>
+
+                           <div class="counter">
+                              <div class="counter__nav">
+                                 <span class="counter__link counter__link--minus"></span>
+                                 <span class="counter__number">1</span>
+                                 <span class="counter__link counter__link--plus"></span>
+                              </div>
+                              <p class="counter__text">дней</p>
+                           </div>
+                        </div>
+
+                        <div class="calculator__col">
+                           <p class="calculator__subtitle">готовка</p>
+
+                           <label class="label">
+                              <input type="checkbox" class="label__input">
+                              <span class="label__span">с готовкой</span>
+                           </label>
+
+                           <label class="label label--ml">
+                              <input type="checkbox" class="label__input">
+                              <span class="label__span">без готовки</span>
+                           </label>
+                        </div>
+                     </div>
+                     <div class="calc-footer">
+                        <div class="calc-footer__col">
+                           <p class="calc-footer__text calc-footer--bottel">Ориентировочное количество воды</p>
+                           <span class="calc-footer__count footer__count--mg">1</span>
+                        </div>
+
+                        <div class="calc-footer__col">
+                           <p class="calc-footer__text calc-footer--card">Цена со скидкой 10%  -от 20 бутылей</p>
+                           <span class="calc-footer__count footer__count--mg">100<span class="calc-footer__count">₽</span> </span>
+                        </div>
+
+                        <button class="order-btn order-btn--util">заказать</button>
+                     </div>
+                  </form>
+               </div>
+               
+         </div>
+
 
       </div><!--top-container-->
-     
-
-
 </div><!--bg-general-->
       
    
