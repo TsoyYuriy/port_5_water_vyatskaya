@@ -13,13 +13,14 @@
     &__title {
         text-align: center;
         @include title-size(29px, 36px);
-        font-weight: 600;
+        font-weight: 500;
         @include tablet-600 {
             @include title-size(35px, 48px);
             position: absolute;
             left: 72px;
         }
         @include tablet-900 {
+            font-weight: 600;
             @include title-size(58px, 70px);
         }
     }
@@ -127,9 +128,6 @@
         text-transform: uppercase;
         display: inline-flex;
         @extend %center-flex;
-        // @include tablet-900 {
-        //     margin-bottom: 14px;
-        // }
     }
 }
 @include tablet-900 {
@@ -138,15 +136,17 @@
     }
 }
 .counter {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
-    align-items: center;
-    margin-left: auto;   
-    margin-right: 7%;
-    @include tablet-900 {
-        margin: 0;
-        margin-top: auto;
-        margin-bottom: 50px;
+    &__utilis {
+        align-items: center;
+        margin-left: auto;   
+        margin-right: 7%;
+        @include tablet-900 {
+            margin: 0;
+            margin-top: auto;
+            margin-bottom: 50px;
+        }
     }
     &__link {
         width: 10px;
@@ -219,16 +219,16 @@
     line-height: 20px;
     text-transform: uppercase;
     color: #FFFFFF;
-    padding: 13px 59px;
     background: #EC1F3A;
     border-radius: 6px;
     border: none;
     display: inline-block;
+    margin-top: 29px;
+    align-self: center;
+    @include tablet-900 {
+        margin: 0;
+    }
     &--util {
-        margin-top: 29px;
-        align-self: center;
-        @include tablet-900 {
-            margin: 0;
-        }
+        padding: 13px 59px;
     }
 }

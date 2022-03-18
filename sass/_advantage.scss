@@ -1,9 +1,16 @@
 .advantage {
     overflow: hidden;
     margin-bottom: 107px;
+    @include tablet-1200 {
+        @include container(1226px);
+        margin-bottom: 177px;
+    }
     &__title-wrap {
         padding: 0 33px;
         margin-bottom: 33px;
+        @include tablet-1200 {
+            padding: 0;
+        }
     }
     &__title {
         @include title-size(29px, 36px);
@@ -17,6 +24,7 @@
         }
         @include tablet-900 {
             @include title-size(58px, 70px);
+
         }
     }
     &__row {
