@@ -1,0 +1,62 @@
+.description {
+    display: flex;
+    flex-flow: column wrap;
+    margin-bottom: 110px;
+    &__title {
+        @include title-size(29px, 35px);
+        font-weight: 700;
+        @include tablet-900 {
+            @include title-size(57px, 70px);
+            margin-bottom: 20px;
+            &--big {
+                text-transform: uppercase;
+            }
+        }
+    }
+    &__text {
+        @include title-size(18px, 22px);
+        font-weight: 400;
+        @include tablet-600 {
+            margin-bottom: 0;
+        }
+        @include tablet-900 { 
+            @include title-size(24px, 29px);
+        }
+
+
+    }
+    &__mob-hidden {
+        display: none;
+        @include tablet-600 {
+            display: block;
+            margin-top: 0;
+        }
+    }
+    &-btn {
+       display: none;
+        &:checked ~ .description__mob-hidden {
+            display: block;
+        }
+        &__text {
+            @include title-size(18px, 180%);
+            font-weight: 600;
+            background: linear-gradient(93.58deg, rgba(255, 255, 255, 0) -0.02%, rgba(255, 255, 255, 0.4) 99.98%), #FFFFFF;
+            border: 1px solid #000000;
+            box-shadow: 6px 10px 25px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 14px 30px;
+            display: inline-block;
+        }
+    }
+    &__label {
+        align-self: center;
+        @include tablet-600 {
+            display: none;
+        }
+    }
+
+
+
+    
+
+}
