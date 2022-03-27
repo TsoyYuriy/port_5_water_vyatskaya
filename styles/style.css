@@ -1087,7 +1087,8 @@ body {
 }
 @media screen and (min-width: 900px) {
   .production {
-    margin-bottom: 303px;
+    margin-bottom: 0;
+    padding-bottom: 144px;
   }
 }
 .production__title {
@@ -1124,6 +1125,200 @@ body {
   height: 100%;
   border-width: 0;
   outline-width: 0;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (min-width: 600px) {
+  .footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+  }
+}
+@media screen and (min-width: 900px) {
+  .footer {
+    justify-content: space-between;
+  }
+}
+.footer--logo {
+  width: 197px;
+  height: 51px;
+  margin: 0 auto 53px;
+}
+@media screen and (min-width: 900px) {
+  .footer--logo {
+    position: absolute;
+    left: 0;
+    top: -25px;
+  }
+}
+.footer__nav {
+  display: flex;
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 900px) {
+  .footer__nav {
+    justify-content: space-between;
+  }
+}
+.footer__menu, .footer__contacts, .footer .social-net {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer__contacts {
+  flex-basis: 60%;
+  margin-left: auto;
+}
+@media screen and (min-width: 900px) {
+  .footer__contacts {
+    order: -1;
+    margin: 0;
+    align-self: center;
+  }
+}
+.footer__li {
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 900px) {
+  .footer__li {
+    margin-bottom: 23px;
+  }
+}
+.footer__link, .footer .contact__link {
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  font-weight: 600;
+  text-decoration: none;
+}
+@media screen and (min-width: 600px) {
+  .footer__link, .footer .contact__link {
+    color: #67C0FF;
+  }
+}
+@media screen and (min-width: 900px) {
+  .footer__link, .footer .contact__link {
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+.footer__icon {
+  display: flex;
+  align-items: center;
+}
+.footer--phone {
+  background: url(../design/footer-icon--phone.svg) no-repeat left;
+  height: 29px;
+}
+.footer--whatsapp {
+  background: url(../design/footer-icon--whatsapp.svg) no-repeat left;
+  height: 29px;
+}
+.footer--location {
+  background: url(../design/footer-icon--location.svg) no-repeat left;
+  height: 29px;
+}
+
+.contact__link {
+  padding-left: 40px;
+}
+
+.social-net {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 900px) {
+  .social-net {
+    flex-direction: column;
+  }
+}
+.social-net__li {
+  margin-right: 19px;
+  position: relative;
+}
+.social-net__li:last-child {
+  margin-right: 0;
+}
+@media screen and (min-width: 900px) {
+  .social-net__li {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #3287BF;
+    border-radius: 22px;
+    margin-bottom: 16px;
+    padding: 5px 5px 5px 14px;
+  }
+}
+.social-net__link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.social-net--vk, .social-net--insta, .social-net--email, .social-net--youtube {
+  display: inline-block;
+  width: 29px;
+  height: 29px;
+}
+@media screen and (min-width: 600px) {
+  .social-net--vk, .social-net--insta, .social-net--email, .social-net--youtube {
+    border-radius: 29px;
+    padding: 5px;
+  }
+}
+.social-net--vk {
+  background: url(../design/footer-icon__vk.svg) no-repeat center;
+}
+@media screen and (min-width: 600px) {
+  .social-net--vk {
+    background: #67C0FF url(../design/footer-icon__vk.svg) no-repeat center;
+  }
+}
+.social-net--insta {
+  background: url(../design/footer-icon__inst.svg) no-repeat center;
+}
+@media screen and (min-width: 600px) {
+  .social-net--insta {
+    background: #67C0FF url(../design/footer-icon__inst.svg) no-repeat center;
+  }
+}
+.social-net--email {
+  background: url(../design/footer-icon__email.svg) no-repeat center;
+}
+@media screen and (min-width: 600px) {
+  .social-net--email {
+    background: #67C0FF url(../design/footer-icon__email.svg) no-repeat center;
+  }
+}
+.social-net--youtube {
+  background: url(../design/footer-icon__youtube.svg) no-repeat center;
+}
+@media screen and (min-width: 600px) {
+  .social-net--youtube {
+    background: #67C0FF url(../design/footer-icon__youtube.svg) no-repeat center;
+  }
+}
+.social-net__text {
+  display: none;
+}
+@media screen and (min-width: 900px) {
+  .social-net__text {
+    font-size: 20px;
+    line-height: 25px;
+    display: inline-block;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-right: 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

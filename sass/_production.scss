@@ -1,7 +1,8 @@
 .production {
     margin-bottom: 68px;
     @include tablet-900 {
-        margin-bottom: 303px;
+        margin-bottom: 0;
+        padding-bottom: 144px;
     }
     &__title {
         @include title-size(29px, 35px);

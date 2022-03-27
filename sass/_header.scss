@@ -9,6 +9,9 @@
     align-items: center;
     position: relative;
     flex-wrap: wrap;
+    // @include tablet-1400 {
+    //     padding-top: 0;
+    // }
 }
 .logo {
     background: url(../design/logo.jpg) no-repeat center;
